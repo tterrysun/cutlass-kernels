@@ -2,6 +2,7 @@
 
 #include "online_softmax.h"
 #include "shared_storage.h"
+#include "gemm/copy_tensor.hpp"
 
 // Epilogue that copies RowSum and RowMax (For debugging only).
 template <class RowMax, class RowSum, class SoftType, class TiledMma0,

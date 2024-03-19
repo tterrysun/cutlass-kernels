@@ -13,6 +13,8 @@
 #include "cutlass/tensor_ref.h"
 #include <cute/tensor.hpp>
 
+using namespace cute;
+
 // Conversion Utility to convert RMEM from one type to another.
 // Used for conversion from AccumType to PrecType.
 template <typename To_type, typename From_type, typename Fragment>

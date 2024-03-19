@@ -61,6 +61,7 @@ CUTLASS_DEVICE static void applySoftmaxNormalizer(const Fragment0 &sPrime,
                                                   Fragment1 &accum) {
 
   using FragValType = typename Fragment1::value_type;
+  using namespace cute;
   auto data = accum.data();
   int n = 0;
   int rowId = 0;

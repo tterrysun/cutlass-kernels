@@ -3,6 +3,7 @@
 #include "online_softmax.h"
 #include "reg2reg.h"
 #include "shared_storage.h"
+#include "gemm/gemm_tensor.hpp"
 
 // FMHA Consumer does GEMMs and softmax
 template <class Gemm1Type, class AccumType, class SoftType, class Gemm2Type,
